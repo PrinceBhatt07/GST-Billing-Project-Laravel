@@ -136,7 +136,7 @@
     </div>
 
     <!-- Right bar overlay-->
-    <div class="rightbar-overlay"></div>
+    <!-- <div class="rightbar-overlay"></div> -->
 
     <!-- Vendor js -->
     <script src="{{ asset('assets/js2/vendor.min.js')}}"></script>

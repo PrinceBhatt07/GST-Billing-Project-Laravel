@@ -24,12 +24,11 @@
                             <div class="col-md-4">
                                 <div class="form-group mb-3">
                                     <label for="validationCustom01">Type</label>
-                                    <select name="" class="form-control border-bottom "
-                                        id="validationCustom01" placeholder="Please select Type"
-                                        required="">
-                                        <option value="">Client</option>
-                                        <option value="">Vendor</option>
-                                        <option value="">Employee</option>
+                                    <select class="form-control border-bottom" id="validationCustom01" name="party_type" placeholder="Please select Type" required>
+                                        <option value="">Select Party</option>
+                                        <option value="client">Client</option>
+                                        <option value="vendor">Vendor</option>
+                                        <option value="employee">Employee</option>
                                     </select>
                                 </div>
                             </div>
@@ -37,7 +36,7 @@
                                 <div class="form-group mb-3">
                                     <label for="validationCustom01">Full Name</label>
                                     <input type="text" class="form-control border-bottom "
-                                        id="validationCustom01" placeholder="Enter client's full name"
+                                        id="validationCustom01" name="full_name" placeholder="Enter client's full name"
                                         required="">
                                     <div class="invalid-feedback">
                                         Please provide a Full name.
@@ -48,7 +47,7 @@
                                 <div class="form-group mb-3">
                                     <label for="validationCustom02">Phone/Mobile Number</label>
                                     <input type="text" class="form-control border-bottom "
-                                        id="validationCustom02" placeholder="Enter phone/mobile number"
+                                        id="validationCustom02" name="phone_no" placeholder="Enter phone/mobile number"
                                         required="">
                                     <div class="invalid-feedback">
                                         Please provide a Number.
@@ -62,7 +61,7 @@
                                 <div class="form-group mb-3">
                                     <label for="validationCustom03">Address</label>
                                     <input type="text" class="form-control border-bottom "
-                                        id="validationCustom02" placeholder="Enter Address" required="">
+                                        name="address" id="validationCustom02" placeholder="Enter Address" required="">
                                     <div class="invalid-feedback">
                                         Please provide a valid Address.
                                     </div>
@@ -78,7 +77,7 @@
                                 <div class="form-group mb-3">
                                     <label for="validationCustom04">Account Holder Name</label>
                                     <input type="text" class="form-control border-bottom "
-                                        id="validationCustom04" placeholder="Enter Accoumt Holder name"
+                                        name="account_holder_name" id="validationCustom04" placeholder="Enter Accoumt Holder name"
                                         required="">
                                     <div class="invalid-feedback">
                                         Please provide a valid state.
@@ -90,7 +89,7 @@
                                 <div class="form-group mb-3">
                                     <label for="validationCustom05">Account Number</label>
                                     <input type="text" class="form-control border-bottom "
-                                        id="validationCustom05" placeholder="Enter Account Number"
+                                        name="account_no" id="validationCustom05" placeholder="Enter Account Number"
                                         required="">
                                     <div class="invalid-feedback">
                                         Please provide a valid Code.
@@ -103,7 +102,7 @@
                                 <div class="form-group mb-3">
                                     <label for="validationCustom02">Bank Name</label>
                                     <input type="text" class="form-control border-bottom "
-                                        id="validationCustom02" placeholder="Enter Bank Name"
+                                        name="bank_name" id="validationCustom02" placeholder="Enter Bank Name"
                                         required="">
                                     <div class="invalid-feedback">
                                         Please provide a GSTIN No.
@@ -117,7 +116,7 @@
                                 <div class="form-group mb-3">
                                     <label for="validationCustom02">IFSC Code</label>
                                     <input type="text" class="form-control border-bottom "
-                                        id="validationCustom02" placeholder="Enter IFSC Code"
+                                        name="ifsc_code" id="validationCustom02" placeholder="Enter IFSC Code"
                                         required="">
                                     <div class="invalid-feedback">
                                         Please provide a Email.
@@ -127,14 +126,14 @@
                             <div class="col-md-6">
                                 <label for="validationCustom02">Branch</label>
                                 <input type="text" class="form-control border-bottom "
-                                    id="validationCustom02" placeholder="Enter Branch" required="">
+                                    name="branch_address" id="validationCustom02" placeholder="Enter Branch" required="">
                                 <div class="invalid-feedback">
                                     Please provide a Branch Name.
                                 </div>
                             </div>
                         </div>
-                        <button class="btn btn-primary" type="submit">Submit</button>
                         <button class="btn btn-secondary" type="reset">Reset</button>
+                        <button class="btn btn-primary" type="submit">Submit</button>
                     </form>
                 </div>
             </div>
